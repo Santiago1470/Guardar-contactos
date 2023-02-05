@@ -32,8 +32,7 @@ public class PersonasController implements ActionListener {
 	
 	public void iniciar() {
 		vista.setVisible(true);
-		/*
-		String URL = JOptionPane.showInputDialog(null, "Ingrese por favor la URL de la base de datos:");
+		/*String URL = JOptionPane.showInputDialog(null, "Ingrese por favor la URL de la base de datos:");
 		String user = JOptionPane.showInputDialog(null, "Ingrese por favor el usuario de la base de datos:");
 		String password = JOptionPane.showInputDialog(null, "Ingrese por favor la contraseña del usuario de la base de datos:");
 		
@@ -45,12 +44,17 @@ public class PersonasController implements ActionListener {
 	    try {
 	    	daoPersonaImpl.conectar();
 	    	mostrarPersonas();
-	    	//JOptionPane.showMessageDialog(null, "Base de datos conectada correctamente.");
+	    	// JOptionPane.showMessageDialog(null, "Base de datos conectada correctamente.");
 	    	daoPersonaImpl.cerrar();
 		} catch (Exception ex) {
 			ex.printStackTrace();
 			// JOptionPane.showMessageDialog(null, "Error al conectar la base de datos.\nReinicie el programa, por favor.");
 		}
+	    if(daoPersonaImpl.estadoConexion()) {
+	    	JOptionPane.showMessageDialog(null, "Base de datos conectada correctamente.");
+	    } else {
+	    	JOptionPane.showMessageDialog(null, "Error al conectar la base de datos.");
+	    }
 	}
 	
 	@Override
