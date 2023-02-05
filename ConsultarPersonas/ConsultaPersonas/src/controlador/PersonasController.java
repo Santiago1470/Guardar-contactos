@@ -32,6 +32,7 @@ public class PersonasController implements ActionListener {
 	
 	public void iniciar() {
 		vista.setVisible(true);
+		/*
 		String URL = JOptionPane.showInputDialog(null, "Ingrese por favor la URL de la base de datos:");
 		String user = JOptionPane.showInputDialog(null, "Ingrese por favor el usuario de la base de datos:");
 		String password = JOptionPane.showInputDialog(null, "Ingrese por favor la contraseña del usuario de la base de datos:");
@@ -39,7 +40,7 @@ public class PersonasController implements ActionListener {
 		this.daoPersonaImpl.setURL(URL);
 		this.daoPersonaImpl.setUser(user);
 		this.daoPersonaImpl.setPassword(password);
-		
+		*/
 		
 	    try {
 	    	daoPersonaImpl.conectar();
