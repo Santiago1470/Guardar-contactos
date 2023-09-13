@@ -11,13 +11,13 @@ CREATE TABLE `lista_personas` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 update lista_personas set nombre = "Santiago Torres", edad = 18,
-identificacion = 1000603175, correo = "st147086@gmail.com",
-telefono = 3007526311 where id = 1;
+identificacion = 1030986048, correo = "st147086@gmail.com",
+telefono = 3010659653 where id = 1;
 
 select * from lista_personas;
 
 -- insert into lista_personas(nombre, edad, identificacion, correo, telefono) values
--- ("Nuevo", 19, 1000603175, "st147086@gmail.com", 300);
+-- ("Nuevo", 19, 1030986048, "st147086@gmail.com", 300);
 
 delete from lista_personas where id = 3;
 drop table lista_personas;
